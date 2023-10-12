@@ -2,12 +2,136 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Tim Berners-Lee | Britannica</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header class="top-bar">
+      <div class="container">
+        <div class="left hidden-desktop">
+          <img src="images/menu-icon.svg" alt="Menu" />
+          <img src="images/search-icon.svg" alt="Search" />
+        </div>
+        <div class="center">
+          <img src="images/Logo_britannica.png" alt="Britanica logo" class="logo">
+          <nav class="desktop-nav">
+            <ul>
+              <li><a href="#"><img src="images/menu-icon.svg" alt="Menu" />Browse</a></li>
+              <li><a href="#"><img src="images/search-icon.svg" alt="Search" />Search</a></li>
+              <li><a href="#">Dictionary</a></li>
+              <li><a href="#">Quizzes</a></li>
+              <li><a href="#">Money</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right">
+          <a href="#" class="subscribe-button">Subscribe</a>
+          <a href="#" class="login-button">Login</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <nav class="breadcrumb">
+        <a href="#">Home</a> > <a href="#">Science</a> > <a href="#">Mathematics</a>
+    </nav>
+      <div class="container">
+        <header class="article-header">
+          <div class="top">
+            <div>
+              <h1>Tim Berners-Lee</h1>
+              <div class="subtitle">British Scientist</div>
+            </div>
+            <div class="button-group">
+              <button id="print">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path fill="currentColor" d="M640-640v-120H320v120h-80v-200h480v200h-80Zm-480 80h640-640Zm560 100q17 0 28.5-11.5T760-500q0-17-11.5-28.5T720-540q-17 0-28.5 11.5T680-500q0 17 11.5 28.5T720-460Zm-80 260v-160H320v160h320Zm80 80H240v-160H80v-240q0-51 35-85.5t85-34.5h560q51 0 85.5 34.5T880-520v240H720v160Zm80-240v-160q0-17-11.5-28.5T760-560H200q-17 0-28.5 11.5T160-520v160h80v-80h480v80h80Z"/></svg>
+                Print
+              </button>
+              <button id="cite">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path fill="currentColor" d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z"/></svg>
+                Cite
+              </button>
+              <button id="share">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path fill="currentColor" d="M720-80q-50 0-85-35t-35-85q0-7 1-14.5t3-13.5L322-392q-17 15-38 23.5t-44 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q23 0 44 8.5t38 23.5l282-164q-2-6-3-13.5t-1-14.5q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-23 0-44-8.5T638-672L356-508q2 6 3 13.5t1 14.5q0 7-1 14.5t-3 13.5l282 164q17-15 38-23.5t44-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-640q17 0 28.5-11.5T760-760q0-17-11.5-28.5T720-800q-17 0-28.5 11.5T680-760q0 17 11.5 28.5T720-720ZM240-440q17 0 28.5-11.5T280-480q0-17-11.5-28.5T240-520q-17 0-28.5 11.5T200-480q0 17 11.5 28.5T240-440Zm480 280q17 0 28.5-11.5T760-200q0-17-11.5-28.5T720-240q-17 0-28.5 11.5T680-200q0 17 11.5 28.5T720-160Zm0-600ZM240-480Zm480 280Z"/></svg>
+                Share
+              </button>
+              <button id="feedback">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path fill="currentColor" d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
+                Feedback
+              </button>
+              <button id="actions">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path fill="currentColor" d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"/></svg>
+              </button>
+            </div>
+            
+          </div>
+          <div class="bottom">
+              <div class="caption">
+              Alternate title: Sir Tim Berners-Lee
+            </div>
+            <address class="author">
+              <div>By <a rel="author" href="#">Michael Aaron Dennis</a> • Last Updated: <time datetime="2022-11-02 20:00">Dec 2, 2022</time> <a href="#">• Edit History</a></div>
+            </address>
+          </div>
+        </header>
+        <br>
+        <aside class="info">
+          <figure>
+            <img src="images/British-scientist-Tim-Berners-Lee.webp" alt="Tim Berners-Lee">
+            <figcaption>Tim Berners-Lee</figcaption>
+          </figure>
+          <hr />
+          <div class="facts">
+            <div><strong>Born:</strong> June 8, 1955, (age 67) • <a href=#>London</a> • <a href="#">England</a></div>
+            <div><strong>Founder:</strong> <a href=#>World Wide Web Consortium</a></div>
+            <div><strong>Inventions:</strong> <a href=#>World Wide Web</a> • <a href=#>World Wide Web</a></div>
+          </div>
+        </aside>
+        <p><strong>Tim Berners-Lee</strong>, in full <strong>Sir Tim Berners-Lee</strong>, 
+            (born June 8, 1955, <a href="#">London</a>, England), British computer scientist, 
+            generally credited as the inventor of the <a href="#">World Wide Web</a>. 
+            In 2004 he was awarded a knighthood by Queen <a href="#">Elizabeth II</a> of the United Kingdom and
+             the inaugural Millennium Technology Prize (€1 million) by the Finnish Technology Award Foundation.</p>
+
+        <p>Computing came naturally to Berners-Lee, as both of his parents worked on the 
+            <a href="#">Ferranti Mark I</a>, the first commercial computer. (<em>See</em> 
+            <a href="#">computer: The first stored-program machines</a>.) 
+            After graduating in 1976 from the <a href="#">University of Oxford</a>, 
+            Berners-Lee designed computer <a href="#">software</a> for two years at Plessey Telecommunications Ltd.,
+             located in <a href="#">Poole</a>, Dorset, <a href="#">England</a>. 
+             Following this, he had several positions in the computer industry, 
+              a stint from June to December 1980 as a software engineering consultant at <a href="#">CERN</a>, 
+              the European <a href="#">particle physics</a> laboratory in <a href="#">Geneva</a>.</p>
+
+        <p>While at CERN, Berners-Lee developed a program for himself, called Enquire, 
+            that could store information in files that contained connections (“links”) 
+            both within and among separate files—a technique that became known as <a href="#">hypertext</a>. 
+            After leaving CERN, Berners-Lee worked for Image Computer Systems Ltd., located in Ferndown, Dorset, 
+            where he designed a variety of computer systems. 
+            In 1984 he returned to CERN to work on the design of the laboratory's <a href="#">computer network</a>, 
+            developing procedures that allowed <a href="#">diverse</a> computers to communicate 
+            with one another and researchers to control remote machines. 
+            In 1989 Berners-Lee drew up a proposal for creating a global hypertext document system 
+            that would make use of the <a href="#">Internet</a>. 
+            His goal was to provide researchers with the ability to share their results, techniques, 
+            and practices without having to exchange <a href="#">e-mail</a> constantly. 
+            Instead, researchers would place such information “online,” where their peers could immediately retrieve it anytime,
+             day or night. Berners-Lee wrote the software for the first Web server 
+             (the central repository for the files to be shared) and the first Web client, or “browser” 
+             (the program to access and display files retrieved from the server), between October 1990 and the summer of 1991. 
+             The first “killer application” of the Web at CERN was the laboratory's telephone directory—a 
+             <a href="#">mundane</a> beginning for one of the technological wonders of the computer age.</p>
+
+        <p>From 1991 to 1993 Berners-Lee evangelized the Web. In 1994 in the <a href="#">United States</a> 
+            he established the <a href="#">World Wide Web (W3) Consortium</a> at the <a href="#">
+                Massachusetts Institute of Technology's</a> Laboratory for Computer Science. 
+                The <a href="#">consortium</a>, in consultation with others, lends oversight to the Web and 
+                the development of standards. In 1999 Berners-Lee became the first holder of the 3Com Founders 
+                chair at the Laboratory for Computer Science. His numerous other honours included the 
+                National Academy of Engineering's prestigious <a href="#">Charles Stark Draper Prize</a> (2007). 
+                Berners-Lee was the author, along with Mark Fischetti, of 
+                <em>Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web</em> (2000).</p>
+      </div>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
